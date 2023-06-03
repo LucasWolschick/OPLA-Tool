@@ -58,7 +58,7 @@ public class NSGAIII {
         (new ReferencePoint()).generateReferencePoints(referencePoints, getProblem().getNumberOfObjectives(),
                 numberOfDivisions);
 
-        int populationSize = referencePoints.size();
+        int populationSize = builder.getPopulationSize();//referencePoints.size();
         while (populationSize % 4 > 0) {
             populationSize++;
         }
